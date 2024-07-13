@@ -1,0 +1,20 @@
+<div>
+    <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label for="title">Título</label>
+            <input type="text" id="title" formControlName="title" class="form">
+            @if(postForm.get('title')?.invalid && postForm.get('title')?.touched ) {
+                <div class="alert alert-danger">¡El título es requerido!</div>
+            }
+        </div>
+
+        <div>
+            <label for="body">Cuerpo del artículo</label>
+            <textarea type="text" id="body" formControlName="body" class="form"></textarea>
+            @if(postForm.get('body')?.invalid && postForm.get('body')?.touched ) {
+                <div class="alert alert-danger">¡El cuerpo del artículo es requerido!</div>
+            }
+        </div>
+        <button type="sumbit" [disabled]= "postForm.invalid">Enviar</button>
+    </form>
+</div>

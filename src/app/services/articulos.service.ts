@@ -25,4 +25,8 @@ export class ArticulosService {
   getPost(id:number) {
     return this.http.get<Articulo>(`${this.baseURL}/${id}`, this.options)
   }
+
+  savePost(data: Articulo){
+  return this.http.post(`${this.baseURL}` , data)
+  }
 }
