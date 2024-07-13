@@ -4,6 +4,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { ArticulosService } from '../../services/articulos.service';
+import { MatToolbar } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
@@ -13,6 +15,8 @@ import { ArticulosService } from '../../services/articulos.service';
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
+    MatToolbar,
+    MatListModule
   ],
 
   exports: [
@@ -20,6 +24,8 @@ import { ArticulosService } from '../../services/articulos.service';
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
+    MatToolbar,
+    MatListModule
   ],
   providers: [ArticulosService],
 })
