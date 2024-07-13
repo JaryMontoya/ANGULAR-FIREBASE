@@ -1,10 +1,17 @@
 {
   "hosting": {
-    "public": "build",
+    "site": "nanoblog-psti-angprojj",
+    "public": "dist/nano-blog/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }

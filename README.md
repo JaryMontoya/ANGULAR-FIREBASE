@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # FIREBASE LINK 
 
-https://nanoblog-psti.web.app
+ https://nanoblog-psti-angprojj.web.app
 
 ## Development server
 
